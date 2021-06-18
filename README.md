@@ -29,13 +29,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+Both .forEach and .map are methods that run through each item of an array. However, .forEach does not necessarily include a return statement and does not inherently make any changes to any array. .map must have a return statement, and while it does not change the original array, it makes a new array with the specified changes.
+
 2. Explain the difference between a callback and a higher order function.
+
+A callback function is passed into another function as an argument, while a higher order function receives a callback as an argument.
 
 3. Can you explain what a closure is and how you used it in the counter function? 
 
+A closure occurs when a function reaches into its outer scope for a value. In the counter function, the function reaches out to get the value of 'count'.
+
 4. Describe the four principles of the 'this' keyword.
 
+The first principle is window binding, where an unspecified 'this' will return the window in a browser, global in node, or 'undefined' in strict mode. The second principle is implict binding, where 'this' refers to the object left of the dot when a method is called. The third is explicit binding, where .call, .apply or .bind is used, and the object inside the () is 'this'. The fourth is new binding, used with constructor functions, where the 'new' keyword is used and 'this' refers to the object created.
+
 5. Why do we need super() in an extended class?
+
+Both extends and super() work together to make it so the child class inherits the properties and methods of the parent.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
